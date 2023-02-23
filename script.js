@@ -8,6 +8,10 @@ window.addEventListener('load', function(){
         constructor(game){
             this.game = game;
         }        
+        draw(context){
+            context.beginPath();
+            context.arc(100)
+        }
     }
 
     class Game {
@@ -19,8 +23,8 @@ window.addEventListener('load', function(){
         }
     }
    
-    const game = new Game(canvas)
-  
+    const game = new Game(canvas);
+    console.log(game);
     function animate(){
       
     }
